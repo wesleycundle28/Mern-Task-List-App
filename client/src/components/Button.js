@@ -67,12 +67,12 @@ export const SignupButton = () => {
   );
 };
 
-export const TasksButton = () => {
+export const TasksButton = ({ children }) => {
   const navigate = useNavigate();
 
   return (
     <button className="button" onClick={() => navigate("/tasks")}>
-      Tasks
+      {children}
     </button>
   );
 };
