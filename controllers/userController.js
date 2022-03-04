@@ -11,14 +11,14 @@ const User = require("../models/userModel");
 const registerUser = asyncHandler(async (req, res) => {
   //info from client
   const { email, password } = req.body;
-  const email = email.toString().toLowerCase();
+  const emailLower = email.toString().toLowerCase();
   //check for user in database
   const userExists = await User.findOne({ email });
   if (!userExists) {
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);
     const user = await new User({
-      email,
+      emailLower,
       password: hash,
     });
     await user.save();
