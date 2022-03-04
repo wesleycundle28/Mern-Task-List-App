@@ -1,0 +1,93 @@
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnDelete {
+  all: unset;
+  font-size: x-large;
+}
+
+.btnDelete:hover {
+  color: red;
+}
+
+.btnEdit {
+  all: unset;
+  font-size: large;
+}
+
+.btnEdit:hover {
+  color: rgb(243, 180, 8);
+}
+
+.btnTaskToggleComplete {
+  all: unset;
+  color: black;
+  padding: 5px 10px 0px 5px;
+  /* margin-left: auto; */
+}
+
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  border-radius: 0px;
+  padding-top: 0px;
+}
+
+.taskExcerpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  background-color: greenyellow;
+  border: 2px solid #282c34;
+  border-radius: 10px;
+  margin: 5px;
+  min-height: 30px;
+  color: black;
+  padding: 0px 20px 0px 20px;
+}
+
+.taskExcerpt:hover {
+  border: 2px solid rgb(97, 176, 207);
+}
+
+/* .TaskComplete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  background-color: greenyellow;
+  border-radius: 10px;
+  margin: 5px;
+  min-height: 30px;
+  color: black;
+  padding: 5px;
+  text-decoration-line: line-through;
+}
+.TaskToggleComplete {
+  box-shadow: 0 0 0 3px rgb(97, 176, 207);
+} */
+
+.title {
+  display: flex;
+  color: rgb(136, 255, 0);
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  border: 2px solid rgb(255, 230, 0);
+  border-radius: 500px 0px 500px 0px;
+  margin: 5px;
+  padding: 0px 30px 0px 30px;
+  width: 140px;
+  text-shadow: rgb(5, 5, 5);
+}
+
+@media only screen and (max-width: 600px) {
+  .Title {
+    font-size: 1.8em;
+  }
+}

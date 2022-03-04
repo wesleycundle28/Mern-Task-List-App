@@ -1,0 +1,35 @@
+.loginContainer {
+  color: white;
+  width: 100vw;
+  margin-top: 100px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+  max-width: 420px;
+}
+
+.btnLogin {
+  all: unset;
+  color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+.btnLogin:hover {
+  color: blueviolet;
+}

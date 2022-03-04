@@ -1,0 +1,25 @@
+.btnUpdate {
+  align-self: center;
+  all: unset;
+  font-size: 50px;
+  padding-top: 14px;
+}
+
+.btnUpdate:hover {
+  color: green;
+}
+
+.editContainer {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: x-large;
+}
+
+.inputButtonDiv {
+  display: flex;
+  align-items: center;
+}

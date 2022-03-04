@@ -1,0 +1,13 @@
+.button {
+  all: unset;
+  color: greenyellow;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 1.3rem;
+  margin: 10px;
+  outline: none;
+}
+
+.button:hover {
+  color: blueviolet;
+}
