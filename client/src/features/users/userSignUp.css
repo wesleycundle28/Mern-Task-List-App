@@ -3,7 +3,7 @@
 .registerContainer {
   color: white;
   width: 100vw;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   min-height: 400px;
   display: flex;
   flex-direction: column;
