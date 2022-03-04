@@ -1,14 +1,12 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
+const PORT = "";
 // Define our single API slice object
 export const apiSlice = createApi({
   // The cache reducer expects to be added at `state.api` (already default - this is optional)
   reducerPath: "api",
   // All of our requests will have URLs starting with '/fakeApi'
   baseQuery: fetchBaseQuery({
-    baseUrl:
-      "https:mern-task-list-application.herokuapp.com" ||
-      "http://localhost:3400",
+    baseUrl: PORT || "http://localhost:3400",
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("token");
       // If we have a token set in state, let's assume that we should be passing it.
