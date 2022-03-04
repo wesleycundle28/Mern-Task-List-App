@@ -57,9 +57,9 @@ if (process.env.MODE === "production") {
 //code for deployment (end)
 
 //listen on port 3500 (start)
-PORT = process.env.PORT;
+PORT = process.env.PORT || 6600;
 
-app.listen(3200, () => {
+app.listen(PORT, () => {
   console.log(`server connected to 3400`);
 });
 
