@@ -11,6 +11,7 @@ const User = require("../models/userModel");
 const registerUser = asyncHandler(async (req, res) => {
   //info from client
   const { email, password } = req.body;
+  const email = email.toString().toLowerCase();
   //check for user in database
   const userExists = await User.findOne({ email });
   if (!userExists) {
