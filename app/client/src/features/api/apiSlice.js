@@ -6,7 +6,9 @@ export const apiSlice = createApi({
   reducerPath: "api",
   // All of our requests will have URLs starting with '/fakeApi'
   baseQuery: fetchBaseQuery({
-    baseUrl: "http://localhost:3400",
+    baseUrl:
+      "https:mern-task-list-application.herokuapp.com" ||
+      "http://localhost:3400",
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("token");
       // If we have a token set in state, let's assume that we should be passing it.
