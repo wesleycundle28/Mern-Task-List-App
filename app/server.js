@@ -41,7 +41,7 @@ app.use("/user", users);
 
 //routes (end)
 //code for deployment (start)
-if (process.env.MODE === "production") {
+if (process.env.NODE_ENV === "production") {
   // console.log("production mode");
   app.use(express.static(path.join(__dirname, "./client/build")));
 
