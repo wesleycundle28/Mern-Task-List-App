@@ -51,9 +51,19 @@ export const UserLogIn = () => {
       <h2>Log In</h2>
       <form className="loginForm">
         <label>Email:</label>
-        <input type="text" onChange={onEmailChange} value={email} />
+        <input
+          autoCapitalize="none"
+          type="text"
+          onChange={onEmailChange}
+          value={email}
+        />
         <label>Password:</label>
-        <input type="password" onChange={onPasswordChange} value={password} />
+        <input
+          autoCapitalize="none"
+          type="password"
+          onChange={onPasswordChange}
+          value={password}
+        />
         <button
           className="btnLogin"
           onClick={(e) => onLoginUserClicked(e.preventDefault())}

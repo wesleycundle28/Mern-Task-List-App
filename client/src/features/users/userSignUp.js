@@ -80,6 +80,7 @@ export const UserSignUp = () => {
           <span className={validEmail || !email ? "hide" : "invalid"}>x</span>
         </label>
         <input
+          autoCapitalize="none"
           type="email"
           id="email"
           ref={emailRef}
@@ -111,6 +112,7 @@ export const UserSignUp = () => {
           </span>
         </label>
         <input
+          autoCapitalize="none"
           type="password"
           id="password"
           name="password"
