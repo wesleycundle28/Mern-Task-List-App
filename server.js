@@ -11,7 +11,7 @@ require("dotenv").config();
 //pulls info from dotenv folder (end)
 
 //allows communication between 2 different ports (start)
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://mern-task-list-application.herokuapp.com/" }));
 //allows communication between 2 different ports (end)
 
 //allow json to be sent between frontend and backend (start)
